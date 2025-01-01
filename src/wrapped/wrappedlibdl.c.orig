@@ -141,7 +141,7 @@ void* my_dlopen(x64emu_t* emu, void *filename, int flag)
             if(sys)
                 return sys;
         }
-        if(!strcmp(rfilename, "@TERMUX_PREFIX@/lib/x86_64-linux-gnu/d3d")) {
+        if(!strcmp(rfilename, "/usr/lib/x86_64-linux-gnu/d3d")) {
             void* sys = my_dlopen(emu, "d3dadapter9.so.1", flag);
             if(sys)
                 return sys;
