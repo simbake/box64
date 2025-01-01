@@ -1916,7 +1916,7 @@ int initialize(int argc, const char **argv, char** env, x64emu_t** emulator, elf
         printf("See 'box64 --help' for more information.\n");
         exit(0);
     }
-    if(argc>1 && !strcmp(argv[1], "/usr/bin/gdb") && getenv("BOX64_TRACE_FILE"))
+    if(argc>1 && !strcmp(argv[1], "@TERMUX_PREFIX@/bin/gdb") && getenv("BOX64_TRACE_FILE"))
         exit(0);
     // uname -m is redirected to box64 -m
     if(argc==2 && (!strcmp(argv[1], "-m") || !strcmp(argv[1], "-p") || !strcmp(argv[1], "-i")))
