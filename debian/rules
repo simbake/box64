@@ -8,8 +8,8 @@ override_dh_auto_configure:
 	      -DCMAKE_BUILD_TYPE=RelWithDebInfo \
 	      -DARM_DYNAREC=1 \
 		  -DNOGIT=1 \
---install-prefix $_PREFIX \
--DCMAKE_INSTALL_PREFIX=$_PREFIX \
+--install-prefix /data/data/com.termux/files/usr/glibc \
+-DCMAKE_INSTALL_PREFIX=/data/data/com.termux/files/usr/glibc \
 -DARM_DYNAREC=ON \
 -DBOX32=ON \
 -DBOX32_BINFMT=1
